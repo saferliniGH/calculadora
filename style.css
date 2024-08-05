@@ -1,0 +1,117 @@
+.titulo {
+    font-size: 36px;
+    color: #fffefe;
+    margin-bottom: 20px;
+    margin-top: 0; /* Elimina cualquier margen superior que pueda afectar la posición */
+}
+
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background: linear-gradient(to right, #95afc0, #130f40);
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+
+.calculator {
+    width: 320px; /* Ajusta el ancho para hacerla cuadrada */
+    height: 400px; /* Ajusta la altura */
+    border: 2px solid #dff9fb;
+    border-radius: 15px; /* Bordes redondeados */
+    padding: 20px;
+    background-color: #333; /* Fondo oscuro para un look realista */
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+#display {
+    width: 100%;
+    height: 60px;
+    font-size: 32px;
+    text-align: right;
+    margin-bottom: 10px;
+    padding: 10px;
+    box-sizing: border-box;
+    border-radius: 10px;
+    background-color: #fff;
+    border: 2px solid #ccc;
+    color: #333;
+}
+
+.buttons {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 10px;
+}
+
+button {
+    height: 60px;
+    font-size: 22px;
+    background-color: #f0f0f0;
+    border: 2px solid #ccc;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: background-color 0.2s, box-shadow 0.2s;
+}
+
+button:hover {
+    background-color: #e0e0e0;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+button:active {
+    background-color: #d0d0d0;
+}
+
+.equal {
+    grid-column: span 3;
+    background-color: #4caf50;
+    color: white;
+    font-weight: bold;
+}
+
+.equal:hover {
+    background-color: #45a049;
+}
+
+.equal:active {
+    background-color: #3e8e41;
+}
+
+button:nth-child(3n + 4) {
+    background-color: #ff8c00;
+    color: white;
+}
+
+button:nth-child(3n + 4):hover {
+    background-color: #e07b00;
+}
+
+button:nth-child(3n + 4):active {
+    background-color: #c66b00;
+}
+
+button:last-of-type { /* Estilo específico para el botón de borrar el último número */
+    background-color: #fc8f6e;
+    color: white;
+}
+
+button:last-of-type:hover {
+    background-color: #e64a19;
+}
+
+button:last-of-type:active {
+    background-color: #d84315;
+}
+
